@@ -330,7 +330,13 @@ export default function Sidebar() {
             >
               Issues
             </Link>
-
+            <Link
+              className={`link ${highlightLink("/game")}`}
+              href={"/game"}
+              onClick={() => setNavbarExpanded(false)}
+            >
+              Game
+            </Link>
 
             {isMobile ? (
               <Link
